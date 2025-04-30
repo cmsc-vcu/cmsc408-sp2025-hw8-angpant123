@@ -2,9 +2,25 @@
 
 Homework 8 - World Bank Indicator Analysis
 
-(this is a scaffold.  Please clean it up.)
+# Overview of the Pipeline
+The loader.qmd document performs the following steps:
 
-(Remember, someday you'll look back at this repo and wonder what you were thinking!
-Now is your chance to remind your future self what you were thinking!)
+Downloads source data in ZIP format from the World Bank Data Store.
+Unzips the required CSV files needed for analysis.
+Loads the extracted CSVs into MySQL using Pandas and SQLAlchemy.
+Sets permissions for users to access the loaded tables.
 
+
+# How to Run
+Prerequisites
+Ensure the following Python packages are installed:
+
+pandas
+sqlalchemy
+python-dotenv
+mysql-connector-python or equivalent MySQL client
+
+You can install them with:
+
+pip install pandas sqlalchemy python-dotenv mysql-connector-python
 
